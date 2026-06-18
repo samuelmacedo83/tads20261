@@ -16,6 +16,6 @@ def download_history(
     df = yf.download(
         tickers = ticker,
         multi_level_index = multi_level_index
-    )
+    ).reset_index()
 
     return df    
